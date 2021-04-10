@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31177E5E26221F6A0090E87B /* CauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31177E5D26221F6A0090E87B /* CauseView.swift */; };
+		31177E6326224A3D0090E87B /* CauseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31177E6226224A3D0090E87B /* CauseDetailView.swift */; };
 		311DF2A32620AD8E00444A6E /* FirebaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DF2A22620AD8E00444A6E /* FirebaseModels.swift */; };
 		311DF2A72620AFA800444A6E /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DF2A62620AFA800444A6E /* ContentModel.swift */; };
 		3156E81F262162C100D48A42 /* SummaryPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156E81E262162C100D48A42 /* SummaryPageView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		31177E5D26221F6A0090E87B /* CauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauseView.swift; sourceTree = "<group>"; };
+		31177E6226224A3D0090E87B /* CauseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauseDetailView.swift; sourceTree = "<group>"; };
 		311DF2A22620AD8E00444A6E /* FirebaseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModels.swift; sourceTree = "<group>"; };
 		311DF2A62620AFA800444A6E /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		3156E81E262162C100D48A42 /* SummaryPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPageView.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				31ADD2B5261FBB1B007660C4 /* ContentView.swift */,
 				3156E81E262162C100D48A42 /* SummaryPageView.swift */,
 				31177E5D26221F6A0090E87B /* CauseView.swift */,
+				31177E6226224A3D0090E87B /* CauseDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				311DF2A72620AFA800444A6E /* ContentModel.swift in Sources */,
 				31177E5E26221F6A0090E87B /* CauseView.swift in Sources */,
 				31ADD2B6261FBB1B007660C4 /* ContentView.swift in Sources */,
+				31177E6326224A3D0090E87B /* CauseDetailView.swift in Sources */,
 				31ADD2B4261FBB1B007660C4 /* npm6App.swift in Sources */,
 				3156E81F262162C100D48A42 /* SummaryPageView.swift in Sources */,
 			);
