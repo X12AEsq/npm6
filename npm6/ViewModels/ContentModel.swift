@@ -13,9 +13,9 @@ class ContentModel: ObservableObject {
     // List of modules
 //    @Published var modules = [Module]()
     
-    // Current module
-//    @Published var currentModule: Module?
-//    var currentModuleIndex = 0
+    // Current cause
+    @Published var currentCause: Cause
+//    var currentCauseIndex = 0
     
     // Current lesson
 //    @Published var currentLesson: Lesson?
@@ -34,17 +34,17 @@ class ContentModel: ObservableObject {
 //    @Published var currentTestSelected:Int?
     
     
-//    init() {
-        
+    init() {
+        currentCause = Cause()
         // Parse local included json data
 //        getLocalData()
         
         // Download remote json file and parse data
 //        getRemoteData()
-//    }
+    }
     
 //MARK: Utilities
-
+    
 
 
 //MARK: Representations
