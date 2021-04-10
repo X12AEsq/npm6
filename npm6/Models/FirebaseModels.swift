@@ -16,3 +16,12 @@ struct Representation: Decodable, Identifiable {
     var type: String
     var note: String
 }
+
+struct Cause: Decodable, Identifiable {
+    var id: Int
+    var causeID: String
+    var court: String
+    var level: String
+    var charge: String
+    var note: String
+}

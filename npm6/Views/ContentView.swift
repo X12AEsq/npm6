@@ -17,18 +17,30 @@ struct ContentView: View {
                     Image(systemName: "1.square.fill")
                     Text("Summary")
                 }
-            Text("Another Tab")
+            Text("Appearance")
                 .tabItem {
                     Image(systemName: "2.square.fill")
-                    Text("Second")
+                    Text("Appearance")
                 }
-            Text("The Last Tab")
+            Text("Representation")
                 .tabItem {
                     Image(systemName: "3.square.fill")
-                    Text("Third")
+                    Text("Representation")
+                }
+            Text("Client")
+                .tabItem {
+                    Image(systemName: "4.square.fill")
+                    Text("Client")
+                }
+            CauseView()
+                .tabItem {
+                    Image(systemName: "5.square.fill")
+                    Text("Cause")
                 }
         }
-        .font(.headline)    }
+        .font(.headline)
+        .environmentObject(ContentModel())
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {

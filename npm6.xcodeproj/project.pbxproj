@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31177E5E26221F6A0090E87B /* CauseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31177E5D26221F6A0090E87B /* CauseView.swift */; };
 		311DF2A32620AD8E00444A6E /* FirebaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DF2A22620AD8E00444A6E /* FirebaseModels.swift */; };
 		311DF2A72620AFA800444A6E /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DF2A62620AFA800444A6E /* ContentModel.swift */; };
 		3156E81F262162C100D48A42 /* SummaryPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156E81E262162C100D48A42 /* SummaryPageView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31177E5D26221F6A0090E87B /* CauseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauseView.swift; sourceTree = "<group>"; };
 		311DF2A22620AD8E00444A6E /* FirebaseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModels.swift; sourceTree = "<group>"; };
 		311DF2A62620AFA800444A6E /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
 		3156E81E262162C100D48A42 /* SummaryPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPageView.swift; sourceTree = "<group>"; };
@@ -65,7 +67,9 @@
 		3156E81D262162A400D48A42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				31ADD2B5261FBB1B007660C4 /* ContentView.swift */,
 				3156E81E262162C100D48A42 /* SummaryPageView.swift */,
+				31177E5D26221F6A0090E87B /* CauseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,7 +99,6 @@
 				311DF2A52620AF9100444A6E /* ViewModels */,
 				311DF2A12620AD5800444A6E /* Models */,
 				31ADD2B3261FBB1B007660C4 /* npm6App.swift */,
-				31ADD2B5261FBB1B007660C4 /* ContentView.swift */,
 				31ADD2B7261FBB1B007660C4 /* Assets.xcassets */,
 				31ADD2BC261FBB1B007660C4 /* Info.plist */,
 				31DE215C261FBCC400CBDDB6 /* GoogleService-Info.plist */,
@@ -245,6 +248,7 @@
 			files = (
 				311DF2A32620AD8E00444A6E /* FirebaseModels.swift in Sources */,
 				311DF2A72620AFA800444A6E /* ContentModel.swift in Sources */,
+				31177E5E26221F6A0090E87B /* CauseView.swift in Sources */,
 				31ADD2B6261FBB1B007660C4 /* ContentView.swift in Sources */,
 				31ADD2B4261FBB1B007660C4 /* npm6App.swift in Sources */,
 				3156E81F262162C100D48A42 /* SummaryPageView.swift in Sources */,
