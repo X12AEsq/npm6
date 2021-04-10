@@ -12,10 +12,10 @@ struct ContentView: View {
     var body: some View {
         
         TabView {
-            Text("The First Tab")
+            SummaryPageView()
                 .tabItem {
                     Image(systemName: "1.square.fill")
-                    Text("First")
+                    Text("Summary")
                 }
             Text("Another Tab")
                 .tabItem {

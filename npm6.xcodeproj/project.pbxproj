@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311DF2A32620AD8E00444A6E /* FirebaseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DF2A22620AD8E00444A6E /* FirebaseModels.swift */; };
+		311DF2A72620AFA800444A6E /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311DF2A62620AFA800444A6E /* ContentModel.swift */; };
+		3156E81F262162C100D48A42 /* SummaryPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3156E81E262162C100D48A42 /* SummaryPageView.swift */; };
 		31ADD2B4261FBB1B007660C4 /* npm6App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ADD2B3261FBB1B007660C4 /* npm6App.swift */; };
 		31ADD2B6261FBB1B007660C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ADD2B5261FBB1B007660C4 /* ContentView.swift */; };
 		31ADD2B8261FBB1B007660C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31ADD2B7261FBB1B007660C4 /* Assets.xcassets */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		311DF2A22620AD8E00444A6E /* FirebaseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModels.swift; sourceTree = "<group>"; };
+		311DF2A62620AFA800444A6E /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		3156E81E262162C100D48A42 /* SummaryPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryPageView.swift; sourceTree = "<group>"; };
 		31ADD2B0261FBB1B007660C4 /* npm6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = npm6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31ADD2B3261FBB1B007660C4 /* npm6App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = npm6App.swift; sourceTree = "<group>"; };
 		31ADD2B5261FBB1B007660C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +46,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		311DF2A12620AD5800444A6E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				311DF2A22620AD8E00444A6E /* FirebaseModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		311DF2A52620AF9100444A6E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				311DF2A62620AFA800444A6E /* ContentModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3156E81D262162A400D48A42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3156E81E262162C100D48A42 /* SummaryPageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		31ADD2A7261FBB1B007660C4 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +91,9 @@
 		31ADD2B2261FBB1B007660C4 /* npm6 */ = {
 			isa = PBXGroup;
 			children = (
+				3156E81D262162A400D48A42 /* Views */,
+				311DF2A52620AF9100444A6E /* ViewModels */,
+				311DF2A12620AD5800444A6E /* Models */,
 				31ADD2B3261FBB1B007660C4 /* npm6App.swift */,
 				31ADD2B5261FBB1B007660C4 /* ContentView.swift */,
 				31ADD2B7261FBB1B007660C4 /* Assets.xcassets */,
@@ -93,7 +126,6 @@
 				ACBA2F9A2311F4CB13DB8FDC /* Pods-npm6.debug.xcconfig */,
 				EA8071B940C3FAFBB3236C96 /* Pods-npm6.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,8 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311DF2A32620AD8E00444A6E /* FirebaseModels.swift in Sources */,
+				311DF2A72620AFA800444A6E /* ContentModel.swift in Sources */,
 				31ADD2B6261FBB1B007660C4 /* ContentView.swift in Sources */,
 				31ADD2B4261FBB1B007660C4 /* npm6App.swift in Sources */,
+				3156E81F262162C100D48A42 /* SummaryPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
