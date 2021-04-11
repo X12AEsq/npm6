@@ -31,12 +31,26 @@ struct CauseView: View {
             Text(/*@START_MENU_TOKEN@*/"Options:"/*@END_MENU_TOKEN@*/)
                 .padding(.vertical)
             HStack {
-                Button("New Cause", action: {
+                Button(action: {
                     actionOption = 1
                 })
-                Button("Edit Cause", action: {
+                {
+                    Text("New Cause").font(.body)
+                }
+                .foregroundColor(.white)
+                .padding(.all, 5.0)
+                .background(Color.blue)
+                .cornerRadius(16)
+                Button(action: {
                     actionOption = 2
                 })
+                {
+                    Text("Edit Cause").font(.body)
+                }
+                .foregroundColor(.white)
+                .padding(.all, 5.0)
+                .background(Color.blue)
+                .cornerRadius(16)
             }
             if (actionOption == 1) {
                 NavigationView {
@@ -58,48 +72,36 @@ struct CauseView: View {
                         TextField("Charge", text: $charge)
                         TextField("Note", text: $note)
                         HStack {
+                            Spacer()
                             Button(action: {
-                                print("Simple Button")
-                            }, label: {
-                                Text("Simple Button")
-                            })
-                            Button("New Cause", action: {
                                 actionOption = 1
                             })
-                             Button("Edit Cause", action: {
+                            {
+                                Text("Save").font(.body)
+                            }
+                            .foregroundColor(.white)
+                            .padding(.all, 5.0)
+                            .background(Color.blue)
+                            .cornerRadius(16)
+                            Spacer()
+                            Button(action: {
                                 actionOption = 2
                             })
+                            {
+                                Text("Quit").font(.body)
+                            }
+                            .foregroundColor(.white)
+                            .padding(.all, 5.0)
+                            .background(Color.blue)
+                            .cornerRadius(16)
+                            Spacer()
                         }
-
-//                        TextField("Court (CC or 155th)", text: $court)
-//                        Toggle(isOn: $receivewhatever) { Text("Whatever") }
-//                        Stepper(value: $numberstuff, in: 1...10 {
-//                            Text("\(numberstuff) Notification\(numberstuff > 1 ? "s" : "") per week") // pretty cool
-//                        })
-//                        Picker(selection: $selectionvariable, label: Text("Whatever")) {
-//                            Text("1").tag(1)
-//                            Text("2").tag(2)
-//                        }
-//                        DatePicker($datevariable) { Text("date") }
-//                        TextField()
-//                        .textFieldStyle(.roundedBorder)
-//                        DatePicker($datevariable) { Text("date") }
-
                     }
                 }
                 .navigationBarTitle("Whatever")
             } else if (actionOption == 2) {
                 Text("action option is 2")
             }
-  //           Button("Main Page", action: {
-            
-//            HStack(alignment: .center) {
-//                Text("Username:")
-//                    .font(.callout)
-//                    .bold()
-//                TextField("Enter username...", text: $username)
-//                    .textFieldStyle(RoundedBorderTextFieldStyle())
-//            }.padding()contentModel.mainPage() } )
         }
         .environmentObject(ContentModel())
     }
