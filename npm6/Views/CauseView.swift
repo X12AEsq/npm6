@@ -35,7 +35,7 @@ struct CauseView: View {
                     actionOption = 1
                 })
                 Button("Edit Cause", action: {
-                    
+                    actionOption = 2
                 })
             }
             if (actionOption == 1) {
@@ -43,7 +43,35 @@ struct CauseView: View {
                     Form {
                         TextField("Internal ID", text: $internalid)
                         TextField("Cause Number", text: $causeID)
-                        TextField("Court (CC or 155th)", text: $court)
+                        Picker(selection: $court, label: Text("Court")) {
+                            Text("CC").tag("CC")
+                            Text("155th").tag("155th")
+                        }
+                        Picker(selection: $level, label: Text("Offense Level")) {
+                            Text("Misdemeanor B").tag("M-B")
+                            Text("Misdemeanor A").tag("M-A")
+                            Text("State Jail Felony").tag("F-S")
+                            Text("Felony 3").tag("F-3")
+                            Text("Felony 2").tag("F-2")
+                            Text("Felony 1").tag("F-1")
+                        }
+                        TextField("Charge", text: $charge)
+                        TextField("Note", text: $note)
+                        HStack {
+                            Button(action: {
+                                print("Simple Button")
+                            }, label: {
+                                Text("Simple Button")
+                            })
+                            Button("New Cause", action: {
+                                actionOption = 1
+                            })
+                             Button("Edit Cause", action: {
+                                actionOption = 2
+                            })
+                        }
+
+//                        TextField("Court (CC or 155th)", text: $court)
 //                        Toggle(isOn: $receivewhatever) { Text("Whatever") }
 //                        Stepper(value: $numberstuff, in: 1...10 {
 //                            Text("\(numberstuff) Notification\(numberstuff > 1 ? "s" : "") per week") // pretty cool
@@ -55,9 +83,12 @@ struct CauseView: View {
 //                        DatePicker($datevariable) { Text("date") }
 //                        TextField()
 //                        .textFieldStyle(.roundedBorder)
+//                        DatePicker($datevariable) { Text("date") }
+
                     }
                 }
-                .navigationBarTitle("Whatever")            } else if (actionOption == 2) {
+                .navigationBarTitle("Whatever")
+            } else if (actionOption == 2) {
                 Text("action option is 2")
             }
   //           Button("Main Page", action: {
