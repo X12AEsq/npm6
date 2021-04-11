@@ -18,13 +18,15 @@ struct Representation: Decodable, Identifiable {
 }
 
 struct Cause: Decodable, Identifiable {
-    var id: Int16
+    var id: Int
     var causeID: String
     var court: String
     var level: String
     var charge: String
     var note: String
-    
+
+    var validCourts = ["CC", "155th"]
+
     init() {
         id = 0
         causeID = ""

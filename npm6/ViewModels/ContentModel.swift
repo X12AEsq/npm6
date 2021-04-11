@@ -12,7 +12,6 @@ class ContentModel: ObservableObject {
     
     // List of modules
 //    @Published var modules = [Module]()
-    
     // Current cause
     @Published var currentCause: Cause
 //    var currentCauseIndex = 0
@@ -45,7 +44,6 @@ class ContentModel: ObservableObject {
     
 //MARK: Utilities
     
-
 
 //MARK: Representations
 
