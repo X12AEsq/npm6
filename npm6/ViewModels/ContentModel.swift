@@ -14,6 +14,7 @@ class ContentModel: ObservableObject {
 //    @Published var modules = [Module]()
     // Current cause
     @Published var currentCause: Cause
+    @Published var currentStats: PracticeStats
 //    var currentCauseIndex = 0
     
     // Current lesson
@@ -34,6 +35,7 @@ class ContentModel: ObservableObject {
     
     
     init() {
+        currentStats = PracticeStats()
         currentCause = Cause()
         // Parse local included json data
 //        getLocalData()

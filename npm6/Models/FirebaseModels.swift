@@ -7,6 +7,16 @@
 
 import Foundation
 
+struct PracticeStats: Decodable, Identifiable {
+    var id: Int
+    var nextCauseID: Int
+
+    init() {
+        id = 0
+        nextCauseID = 0
+    }
+}
+
 struct Representation: Decodable, Identifiable {
     
     var id: Int
